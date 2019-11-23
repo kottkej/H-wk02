@@ -2,27 +2,77 @@
 <html lang="en-us">
 
 <head>
+  
   <meta charset="UTF-8">
-  <title>Contact | Your Name</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.5">
+  
+  <title>Contact | Jay Kottke</title>
+<!---Replace my css with a bootstrap one-->
+<link rel="styleshee" href=<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ 
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-  <header id="masthead">
+  <!--- replace existing code with a better nav experience--
+  <header id="masthead">--->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a href="index.html" id="logo">Your Name</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+
+      <a class="navbar-brand" href="index.html" id="logo">Jay Kottke</a>
+      <button class="navbar-brand" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle Navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio-1.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
-  </header>
+  </nav>
 
-  <div id="main-container" class="container">
-    <section class="main-section">
-      <h1>Contact</h1>
+  <main class="container">
+    <section class="row">
+      <div class="col-md-10">
+          <form class="block form-horizontal">
+              <h1 class="block-header">Contact</h1>
+              <hr />
+              <div class="form-group">
+                <label for="name" class="col-sm-3 control-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="name" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="col-sm-3 control-label" for="msg">Message</label>
+                <div class="col-sm-10">
+                  <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
+                </div>
+              </div>
+              <button class="submit-btn">Submit</button>
+            </form>
+      </div>
+      
+      <!---<h1>Contact</h1>
 
       <form id="contact-form">
         <ul>
@@ -40,16 +90,14 @@
           </li>
         </ul>
         <input type="submit">
-      </form>
-
+      -->
     </section>
+  </main>
 
-  </div>
-
-  <footer>
-    <div class="container">
-      Copyright &copy; 
-    </div>
+  <footer class="footer">div class="two-toned-footer-color"></div>
+    <p class="text-muted text-muted-footer text-center">
+      &copy; Copyright
+    </p>
   </footer>
 </body>
 

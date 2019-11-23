@@ -4,7 +4,7 @@
 <head>
 
   <meta charset="UTF-8">
-  <meta name='viewport' content="width=device-width, intial-scale=1.25">
+  <meta name='viewport' content="width=device-width, intial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <title>About | Jay Kottke</title>
@@ -18,16 +18,30 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a href="index.html" id="logo">Jay Kottke</a>
-      <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          
+          <a class="navbar-brand" href="index.html" id="logo">Jay Kottke</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="portfolio-1.html">Portfolio</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">About</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-    </div>
-  </header>
 
   <div id="main-container" class="container">
     <section class="main-section">
@@ -35,7 +49,7 @@
 
       <img class="img-fluid port-image" img src="assets/images/Hwy1-SweetRide.JPG" class="auth-image" alt="Highway One with the Sweet Ride">
 
-      <p> Whether looking where we've been or where we are headed, we all savor the sweet ride of content.>
+      <p> What a sweet ride it was! I look forward to the next ride.>
 
     </section>
 
